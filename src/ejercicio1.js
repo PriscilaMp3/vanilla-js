@@ -7,3 +7,4 @@ let contador = {
 };
 
 export { contador };
+i
