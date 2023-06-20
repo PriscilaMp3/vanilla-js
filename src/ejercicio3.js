@@ -25,10 +25,10 @@ let sumaActual = [1, 2, 4].reduce(Sumar);
 console.log(sumaActual);
 
 
-let arrowsaludar = (nombre = "desconocido") => {
+let saludar = (nombre = "desconocido") => {
   console.log("Hola", nombre);
 };
-arrowsaludar("Maria");
+saludar("Maria");
 
 // NO MODIFICAR
 export { clonarArreglo, clonarObjeto, sumar, saludar };
