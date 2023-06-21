@@ -1,6 +1,6 @@
 // Inserte el código aquí
 
-let listanueva = [5, 4, 3];
+let listanueva = [1, 2, 3];
 
 function clonarArreglo(lista) {
   lista = [...listanueva];
@@ -8,27 +8,37 @@ function clonarArreglo(lista) {
   return lista;
 }
 
-let objeto = {
-  casa: "red",
+
+let obj= {
+  nombre: 'Maria', 
+  edad: 20,
 };
 
-function ClonarObjeto(objeto) {
-  return (clonar = { ...objeto });
+
+ function clonarObjeto(){
+  const clonar = {...obj};
+  return clonar
+ }
+
+
+
+function Sumar(...numeros) {
+  return numeros.reduce((acumulador,valorActual) => {
+   return acumulador+valorActual;
+  },0)
 }
 
 
-function Sumar(valor1, valor2) {
-  return (sumar = valor1 + valor2);
-}
-
-let sumaActual = [1, 2, 4].reduce(Sumar);
-console.log(sumaActual);
+/*
 
 
 let saludar = (nombre = "desconocido") => {
   console.log("Hola", nombre);
 };
-saludar("Maria");
+saludar("");
 
+
+
+*/
 // NO MODIFICAR
-export { clonarArreglo, clonarObjeto, sumar, saludar };
+export { clonarArreglo,clonarObjeto,Sumar};
