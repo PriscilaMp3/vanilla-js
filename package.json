@@ -7,6 +7,7 @@
     "start": "parcel serve src/index.html --open",
     "server": "node server",
     "test": "jest"
+    
   },
   "keywords": [],
   "author": "",
