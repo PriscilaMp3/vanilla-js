@@ -1,4 +1,4 @@
-import { Console } from "console";
+
 
 function suma (num1, num2) {
     return num1 + num2;
@@ -46,6 +46,3 @@ export {suma,resta,multiplicar,dividir,filtrarpares,filtrardivisibles}
 
 
 
-// function divisibles (num1, num2) {
-
-// }
