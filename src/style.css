@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/backgroundreloj.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+.containerReloj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: 25px;
+  font-family: "Share Tech Mono", monospace;
+  color: #90f875;
+  position: absolute;
+  width: 90vmin;
+  height: 50vmin;
+  border: 3px solid #ffff;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 5px 20px rgb(118, 250, 18), 0 0 20px rgba(10, 175, 230, 0);
+}
+#hour {
+  letter-spacing: 0.05em;
+  font-size: 12vmin;
+  padding: 5px 0;
+}
+#date {
+  letter-spacing: 0.1em;
+  font-size: 7vmin;
+}
